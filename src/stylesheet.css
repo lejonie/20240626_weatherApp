@@ -15,18 +15,44 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: italic;
-
   font-variation-settings: "wdth" 100;
 }
 .weatherbox {
   background-color: rgba(255, 199, 0, 0.1);
-  margin: 60px auto;
   max-width: 600px;
-  padding: 60px;
-  box-shadow: 0 10px 30px rgb(255, 133, 119, 1);
+  margin: 45px auto;
+  box-shadow: 0 10px 30px rgba(255, 133, 119, 1);
   border-radius: 60px;
+  padding: 30px;
+
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+header {
+  padding: 0 0 15px 0;
+}
+
+.search-form-input {
+  border-radius: 60px;
+  border: 2px solid black;
+  width: 70%;
+  font-size: 16px;
+  padding: 10px;
+}
+.search-form-button {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 60px;
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 5px;
+  transition: all 300ms ease-in-out;
+}
+.search-form-button:hover {
+  background-color: rgba(255, 133, 119, 1);
+  color: white;
+  border: 2px solid white;
 }
