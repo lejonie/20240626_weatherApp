@@ -5,32 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>josie's weather app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="src/stylesheet.css">
 </head>
 
 <body>
-    <header>
-        <form>
-            <input type="search" placeholder="find my city" required />
-            <input type="submit" value="Search" />
-        </form>
-    </header>
-    <main>
-        <div>
-            <h1>Barcelona</h1>
-            <p>Wednesday, it's 10:58, few clouds
-                <br />
-                Humidity: 87%, Wind: 7.2 km/h
-            </p>
-        </div>
-        <div>
-            🌤 26 °C
+    <div class="weatherbox">
+        <header>
+            <form>
+                <input type="search" placeholder="find my city" required />
+                <input type="submit" value="Search" />
+            </form>
+        </header>
+        <main>
+            <div>
+                <h1>Barcelona</h1>
+                <p>Wednesday, it's 10:58, few clouds
+                    <br />
+                    Humidity: 87%, Wind: 7.2 km/h
+                </p>
+            </div>
+            <div>
+                🌤 26 °C
 
-        </div>
-    </main>
-    <footer>this page was built by <a href=" https://github.com/lejonie" target="_blank">josephine hasenjäger</a>, is
-        open-sourced on <a href="https://github.com/lejonie/20240626_weatherApp" target="_blank">github</a> and hosted
-        on <a href="https://josiesweather.netlify.app/" target="_blank">netlify</a>. </footer>
+            </div>
+        </main>
+        <footer>this page was built by <a href=" https://github.com/lejonie" target="_blank">josephine hasenjäger</a>,
+            is
+            open-sourced on <a href="https://github.com/lejonie/20240626_weatherApp" target="_blank">github</a> and
+            hosted
+            on <a href="https://josiesweather.netlify.app/" target="_blank">netlify</a>. </footer>
+    </div>
     <script src="src/index.js"></script>
 </body>
 
