@@ -2,8 +2,8 @@ body {
   background-image: radial-gradient(
     circle,
     rgba(255, 199, 0, 1) 0%,
-    rgba(255, 133, 119, 1) 50%,
-    rgba(128, 202, 240, 1) 100%
+    rgba(255, 133, 119, 1) 33%,
+    rgba(128, 202, 240, 1) 111%
   );
   height: 100%;
   margin: 0;
@@ -12,11 +12,11 @@ body {
 }
 h1 {
   font-family: "Noto Serif Display", serif;
-  font-size: 32pt;
+  font-size: 36pt;
   font-weight: 600;
   font-style: italic;
   font-variation-settings: "wdth" 100;
-  margin: 10px 0;
+  margin: 9px 0;
 }
 .weather-details {
   line-height: 30px;
@@ -74,8 +74,9 @@ header {
   display: flex;
 }
 .weather-data-icon {
-  font-size: 38px;
-  margin-top: 19px;
+  width: 77px;
+  height: 77px;
+  margin-top: 5px;
 }
 .weather-data-temp {
   font-family: "Noto Serif Display", serif;

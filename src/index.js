@@ -7,6 +7,7 @@ function refreshWeather(response) {
   let descriptionElement = document.querySelector("#weather-description");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature);
@@ -14,6 +15,7 @@ function refreshWeather(response) {
   windElement.innerHTML = response.data.wind.speed;
   descriptionElement.innerHTML = response.data.condition.description;
   timeElement.innerHTML = formatDate(date);
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-data-icon">`;
 }
 
 function formatDate(date) {
@@ -38,7 +40,6 @@ function searchCity(city) {
   let apiKey = "3bco0055182cd577e01a3fa410t5ac83";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(refreshWeather);
-  console.log(apiUrl);
 }
 
 function handleSearchSubmit(event) {
@@ -52,3 +53,5 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("New Orleans");
+
+//fixed legibility, added weather icon functionality
