@@ -12,11 +12,11 @@ body {
 }
 h1 {
   font-family: "Noto Serif Display", serif;
-  font-optical-sizing: auto;
+  font-size: 32pt;
   font-weight: 600;
   font-style: italic;
   font-variation-settings: "wdth" 100;
-  padding: 0;
+  margin: 10px 0;
 }
 .weather-details {
   line-height: 30px;
@@ -43,6 +43,31 @@ main {
 
 header {
   padding: 0 0 15px 0;
+}
+
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-data-temp-container {
+  display: flex;
+}
+.weather-data-icon {
+  font-size: 38px;
+  margin-top: 19px;
+}
+.weather-data-temp {
+  font-family: "Noto Serif Display", serif;
+  font-size: 44pt;
+  font-weight: 600;
+  font-variation-settings: "wdth" 100;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.weather-data-unit {
+  font-family: "Noto Serif Display", serif;
+  font-size: 16px;
+  margin-top: 15px;
 }
 
 .search-form-input {
