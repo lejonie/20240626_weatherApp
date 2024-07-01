@@ -8,6 +8,8 @@ function refreshWeather(response) {
   humidityElement.innerHTML = response.data.temperature.humidity;
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = response.data.wind.speed;
+  let descriptionElement = document.querySelector("#weather-description");
+  descriptionElement.innerHTML = response.data.condition.description;
 }
 
 function searchCity(city) {
